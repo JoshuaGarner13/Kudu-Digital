@@ -185,6 +185,17 @@ button.submit-button:active {
 @media (max-width: 900px) {
   .contact-content {
     flex-direction: column;
-    padding: 2.5rem;
+    padding: 2.0rem;
   }
+
+  .info-list li {
+    display: none;
+  }
+
+  .contact-container {
+   padding: 0;
+    width: 100%;      /* Make it nearly full viewport width */
+    max-width: 100vw; 
+  }
+}
 }
