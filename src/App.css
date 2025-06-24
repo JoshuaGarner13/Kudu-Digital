@@ -1,0 +1,46 @@
+.app-container {
+  height: auto;
+  overflow-x: hidden;
+  background: #fff;
+}
+
+/* REMOVED the .horizontal-transition-container and .services-pin-container
+  CSS rules as they are no longer needed.
+*/
+
+.scroll-content-wrapper {
+  height: 100%;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Styles for the Services section remain as they are functional */
+.services-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 2rem;
+  box-sizing: border-box;
+}

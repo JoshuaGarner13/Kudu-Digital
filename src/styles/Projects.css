@@ -1,0 +1,110 @@
+.projects-overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #D89153;
+  background: linear-gradient(225deg, #c98a53, #eb6629);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+}
+
+body.dark-mode .projects-overlay {
+  background: linear-gradient(225deg, #413e3b, #000000);
+}
+
+.projects-header {
+  padding: 2rem 0 1rem;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.projects-title {
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.projects-flowing-menu {
+  flex: 1;
+  overflow: hidden;
+}
+
+
+.flowing-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.flowing-menu-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  background: #000000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flowing-menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.flowing-menu-link {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  padding: 20px;
+}
+
+.flowing-menu-content h2 {
+  margin: 0 0 10px;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #000000;
+}
+
+.flowing-menu-content p {
+  margin: 0;
+  font-size: 1.2em;
+  color: #000000;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .projects-overlay {
+    width: 100%;
+  }
+
+  .projects-section {
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 20px;
+  }
+
+  .projects-header {
+    margin-top: 100px;
+  }
+
+  .projects-header h1 {
+    font-size: 2.2em;
+  }
+
+  .flowing-menu-content h2 {
+    font-size: 1.5em;
+  }
+
+  .flowing-menu-content p {
+    font-size: 1em;
+  }
+}

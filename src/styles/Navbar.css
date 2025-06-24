@@ -1,0 +1,176 @@
+/* =================================================================== */
+/* Navbar.css - FINAL Version for Desktop & Mobile                     */
+/* =================================================================== */
+
+/* --- 1. DESKTOP STYLES (Default for screens > 768px) --- */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  padding: 5px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  width: fit-content;
+  margin: 0 auto;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  padding: 2px 20px;
+  top: 10px;
+}
+
+.logo {
+  height: 84px;
+  width: 84px;
+  margin-right: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo.scrolled-logo {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li { margin: 0 15px; }
+.nav-links a { text-decoration: none; color: #000; font-weight: 500; }
+
+/* --- MOBILE-ONLY ELEMENTS (Hidden on Desktop) --- */
+.mobile-controls,
+.mobile-menu-icon,
+.mobile-nav-links {
+  display: none;
+}
+
+
+/* =================================================================== */
+/* 2. MOBILE STYLES (For screens <= 768px)                             */
+/* =================================================================== */
+@media (max-width: 768px) {
+  /* --- Main Navbar Container on Mobile --- */
+  .navbar {
+    width: 90vw;
+    padding: 8px 20px;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allows dropdown to flow below */
+    transition: all 0.4s ease-in-out, border-radius 0.1s linear 0.3s;
+  }
+  .navbar.expanded {
+    border-radius: 25px;
+    transition: all 0.4s ease-in-out, border-radius 0.1s linear;
+  }
+
+  .logo {
+    height: 40px;
+    width: 40px;
+    margin-right: 0;
+  }
+  .logo.scrolled-logo {
+    height: 35px;
+    width: 35px;
+  }
+
+  /* Hide desktop links on mobile */
+  .nav-links {
+    display: none;
+  }
+
+  /* --- NEW: Mobile Controls Group (Toggle + Burger) --- */
+  .mobile-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between toggle and burger */
+  }
+
+  /* --- Animated Hamburger/Close Icon --- */
+  .mobile-menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 28px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  .hamburger-line {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar.expanded .line-1 { transform: rotate(45deg) translate(6px, 6px); }
+  .navbar.expanded .line-2 { opacity: 0; }
+  .navbar.expanded .line-3 { transform: rotate(-45deg) translate(6px, -6px); }
+
+
+  /* --- The Collapsible Mobile Links Area --- */
+  .mobile-nav-links {
+    display: block;
+    width: 100%; /* Take full width to appear below */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+  }
+  
+  .navbar.expanded .mobile-nav-links {
+    max-height: 500px;
+    padding-bottom: 20px;
+  }
+  
+  .mobile-nav-links ul { list-style: none; padding: 0; margin: 15px 0 0 0; text-align: center; }
+  .mobile-nav-links li { padding: 12px 20px; border-top: 1px solid rgba(0, 0, 0, 0.05); }
+  .mobile-nav-links a { color: #000; font-size: 1.2rem; font-weight: 500; text-decoration: none; }
+  
+  .mobile-social-links { display: flex; justify-content: center; gap: 2rem; padding-top: 1rem; }
+  .mobile-social-links a svg { font-size: 1.5rem; }
+}
+
+
+/* =================================================================== */
+/* 3. THEME TOGGLE & DARK MODE STYLES                                  */
+/* =================================================================== */
+.theme-toggle {
+  position: relative; width: 60px; height: 30px; background-color: #f0f4f8;
+  border: 1px solid #e2e8f0; border-radius: 30px; cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.toggle-slider {
+  position: absolute; top: 2px; left: 2px; width: 24px; height: 24px;
+  background-color: #fff; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease; display: flex; justify-content: center;
+  align-items: center; overflow: hidden;
+}
+.theme-icon {
+  font-size: 16px; position: absolute; transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.sun { opacity: 1; transform: translateY(0); color: #f39c12; }
+.moon { opacity: 0; transform: translateY(100%); color: #f1c40f; }
+
+/* Dark Mode Global Styles */
+body.dark-mode .navbar { background: #171718; }
+body.dark-mode .logo { filter: brightness(0) invert(1); }
+body.dark-mode .nav-links a { color: #fff; }
+body.dark-mode .hamburger-line { background-color: #fff; }
+body.dark-mode .mobile-nav-links li { border-top-color: rgba(255, 255, 255, 0.1); }
+body.dark-mode .mobile-nav-links a { color: #fff; }
+body.dark-mode .theme-toggle { background-color: #2d3748; border-color: #4a5568; }
+body.dark-mode .toggle-slider { transform: translateX(30px); background-color: #4a5568; }
+body.dark-mode .sun { opacity: 0; transform: translateY(-100%); }
+body.dark-mode .moon { opacity: 1; transform: translateY(0); }

@@ -1,0 +1,152 @@
+/* This file is identical to Services1Page.css to maintain a consistent look */
+.service-page-container {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 8rem 2rem 4rem;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+body.dark-mode .service-page-container {
+  background-color: #1a202c;
+}
+
+.service-page-content {
+  display: flex;
+  gap: 4rem;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+}
+
+.service-details-column {
+  flex: 1.2;
+}
+
+.service-image-column {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.service-page-image {
+  width: 90%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-page-image:hover {
+  transform: scale(1.03);
+}
+
+.service-page-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1a202c;
+  margin: 0 0 1.5rem 0;
+}
+
+.service-page-intro {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4a5568;
+  margin-bottom: 2.5rem;
+}
+
+.features-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1a202c;
+  border-bottom: 2px solid #c24e00;
+  padding-bottom: 0.5rem;
+}
+
+.service-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.5rem 0;
+}
+
+.service-features li {
+  font-size: 1rem;
+  color: #4a5568;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.service-features li strong {
+  color: #1a202c;
+}
+
+.service-cta-button {
+  display: inline-block;
+  background-color: #2D3748;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.service-cta-button:hover {
+  background-color: #4A5568;
+  transform: translateY(-2px);
+}
+
+.back-to-main-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.back-to-main-link:hover {
+  color: #2563eb;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .service-page-title,
+body.dark-mode .features-title,
+body.dark-mode .service-features li strong,
+body.dark-mode .back-to-main-link {
+  color: #fff;
+}
+body.dark-mode .service-page-intro,
+body.dark-mode .service-features li {
+  color: #a0aec0;
+}
+body.dark-mode .service-features li {
+  border-bottom-color: #2d3748;
+}
+
+/* Responsive Styles */
+@media (max-width: 960px) {
+  .service-page-content {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 768px) {
+  .service-page-title {
+    font-size: 2.2rem;
+  }
+  .service-image-column {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+  .service-page-image {
+    min-width: 80%;
+  }
+}
