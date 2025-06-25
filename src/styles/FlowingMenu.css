@@ -29,7 +29,7 @@
   cursor: pointer;
   text-transform: uppercase;
   text-decoration: none;
-  white-space: normal; /* Allows text to wrap */
+  white-space: normal;
   padding: 0 1rem;
   font-weight: 600;
   color: #000000;
@@ -121,45 +121,46 @@ body.dark-mode .marquee span {
   }
 }
 
-/* --- Responsive Styles --- */
-
-/* For tablets and larger phones */
 @media (max-width: 768px) {
   .menu__item-link {
-    font-size: 1.5rem; /* Adjusted for better readability on tablets */
+    font-size: 1.5rem;
     padding: 0 1.5rem;
   }
+
   .marquee span {
     font-size: 1.5rem;
   }
+
   .marquee__img {
     width: 140px;
     height: 6vh;
   }
 }
 
-/* For standard phones */
 @media (max-width: 480px) {
   .menu__item-link {
-    font-size: 1.2rem; /* Further reduce font size */
+    font-size: 1.2rem;
   }
+
   .marquee span {
     font-size: 1.2rem;
   }
+
   .marquee__img {
-    width: 100px; /* Make the marquee image smaller */
+    width: 100px;
     height: 5vh;
   }
 }
 
-/* For very small phones */
 @media (max-width: 360px) {
   .menu__item-link {
     font-size: 1rem;
   }
+
   .marquee span {
     font-size: 1rem;
   }
+
   .marquee__img {
     width: 80px;
   }

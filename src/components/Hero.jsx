@@ -1,18 +1,16 @@
-import React, { useRef } from 'react';
-import lensVideo from '../assets/Zander Jordaan Demo Reel video.mp4';
-import logo from '../assets/mainLogo-NoBG.png';
-import '../styles/Hero.css';
+import React, { useRef } from "react";
+import lensVideo from "../assets/Zander Jordaan Demo Reel video.mp4";
+import logo from "../assets/mainLogo-NoBG.png";
+import "../styles/Hero.css";
 
 const Hero = () => {
   const heroRef = useRef(null);
   const videoRef = useRef(null);
 
-  // THE USEEFFECT HOOK THAT WAS CAUSING THE CONFLICT HAS BEEN REMOVED.
-
   const handleArrowClick = () => {
-    const aboutSection = document.querySelector('.about-section');
+    const aboutSection = document.querySelector(".about-section");
     if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
+      aboutSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -31,7 +29,11 @@ const Hero = () => {
       </video>
       <div className="video-overlay"></div>
       <img src={logo} alt="Logo" className="hero-logo" />
-      <button className="arrow-down" onClick={handleArrowClick} aria-label="Scroll to About section">
+      <button
+        className="arrow-down"
+        onClick={handleArrowClick}
+        aria-label="Scroll to About section"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="36"

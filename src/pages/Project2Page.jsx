@@ -1,18 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../styles/Project2Page.css'; // Import the CSS for this page
-import Footer from '../components/Footer';
-// We no longer need to import a local video file.
+import React from "react";
+import { Link } from "react-router-dom";
+import "../styles/Project2Page.css";
+import Footer from "../components/Footer";
 
 const Project2Page = () => {
-  // IMPORTANT: Replace this placeholder with your actual YouTube video ID.
-  const youtubeVideoId = "uBeE2s8D9bQ"; 
+  const youtubeVideoId = "uBeE2s8D9bQ";
 
   return (
     <div className="project-page-container">
       <div className="project-page-content">
         <div className="project-video-wrapper">
-          {/* The <video> tag has been replaced with this <iframe> */}
           <iframe
             className="project-video"
             src={`https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&mute=1&loop=1&playlist=${youtubeVideoId}`}
@@ -24,16 +21,27 @@ const Project2Page = () => {
           ></iframe>
         </div>
         <div className="project-details">
-          <h1 className="project-title">Marilize & Casparus Wedding Trailer - Dullstroom</h1>
+          <h1 className="project-title">
+            Marilize & Casparus Wedding Trailer - Dullstroom
+          </h1>
           <p className="project-description">
-            Set against the breathtaking, misty landscapes of Dullstroom, this wedding trailer for Marilize and Casparus captures the rustic elegance and heartfelt emotion of their special day.
+            Set against the breathtaking, misty landscapes of Dullstroom, this
+            wedding trailer for Marilize and Casparus captures the rustic
+            elegance and heartfelt emotion of their special day.
           </p>
           <p className="project-description">
-            The film balances grand, scenic shots with intimate, personal moments, creating a narrative that is both epic and deeply touching. The serene atmosphere of the highlands provided a perfect backdrop for their love story.
+            The film balances grand, scenic shots with intimate, personal
+            moments, creating a narrative that is both epic and deeply touching.
+            The serene atmosphere of the highlands provided a perfect backdrop
+            for their love story.
           </p>
           <div className="project-meta">
-            <span><strong>Location:</strong> Dullstroom, Mpumalanga</span>
-            <span><strong>Date:</strong> August 2024</span>
+            <span>
+              <strong>Location:</strong> Dullstroom, Mpumalanga
+            </span>
+            <span>
+              <strong>Date:</strong> August 2024
+            </span>
           </div>
           <Link to="/" className="back-to-projects-link">
             &larr; Back to Main Page

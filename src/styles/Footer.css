@@ -1,13 +1,13 @@
 .footer-section {
-  background-color: #D3D3D3; /* A dark, modern background */
-  color: #000000; /* A soft, readable text color */
+  background-color: #D3D3D3;
+  color: #000000;
   padding: 4rem 2rem 2rem;
   font-family: 'Inter', sans-serif;
 }
 
 body.dark-mode .footer-section {
-  background-color: #171718; /* Dark mode background */
-  color: #f3f4f6; /* Light text color for dark mode */
+  background-color: #171718;
+  color: #f3f4f6;
 }
 
 .footer-container {
@@ -21,7 +21,7 @@ body.dark-mode .footer-section {
   align-items: center;
   padding-bottom: 2rem;
   border-bottom: 1px solid #2d3748;
-  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
 
@@ -36,7 +36,7 @@ body.dark-mode .footer-section {
 }
 
 body.dark-mode .footer-logo {
-  filter: invert(1); /* Invert logo colors for dark mode */
+  filter: invert(1);
 }
 
 .footer-brand-name {
@@ -46,7 +46,7 @@ body.dark-mode .footer-logo {
 }
 
 body.dark-mode .footer-brand-name {
-  color: #ffffff; /* Light text color for dark mode */
+  color: #ffffff;
 }
 
 .footer-social-media {
@@ -61,7 +61,7 @@ body.dark-mode .footer-brand-name {
 }
 
 body.dark-mode .footer-social-media a {
-  color: #ffffff; /* Light color for dark mode */
+  color: #ffffff;
 }
 
 .footer-social-media a:hover {
@@ -83,17 +83,18 @@ body.dark-mode .footer-social-media a {
   margin: 0;
 }
 
-/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
-  .footer-top, .footer-bottom {
-    flex-direction: column; /* Stack all items vertically */
+
+  .footer-top,
+  .footer-bottom {
+    flex-direction: column;
     text-align: center;
   }
 
   .footer-bottom p {
-    margin-bottom: 0.75rem; /* Add space between stacked paragraphs */
+    margin-bottom: 0.75rem;
   }
-  
+
   .footer-bottom p:last-child {
     margin-bottom: 0;
   }

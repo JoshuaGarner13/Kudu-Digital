@@ -1,10 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../styles/Project3Page.css'; // Reusing the same CSS as Project2Page for consistency
+import React from "react";
+import { Link } from "react-router-dom";
+import "../styles/Project3Page.css";
 
 const Project3Page = () => {
-  // IMPORTANT: Replace this placeholder with the actual YouTube video ID for this project.
-  const youtubeVideoId = "emcJw8mTniA"; 
+  const youtubeVideoId = "emcJw8mTniA";
 
   return (
     <div className="project-page-container">
@@ -23,14 +22,23 @@ const Project3Page = () => {
         <div className="project-details">
           <h1 className="project-title">Kurston & Clayton - Wedding Trailer</h1>
           <p className="project-description">
-            A concise and energetic trailer showcasing the highlights of Kurston and Clayton's wedding. This piece is designed for social media, capturing the essence and excitement of the day in a shareable format.
+            A concise and energetic trailer showcasing the highlights of Kurston
+            and Clayton's wedding. This piece is designed for social media,
+            capturing the essence and excitement of the day in a shareable
+            format.
           </p>
           <p className="project-description">
-            Fast-paced edits, dynamic music, and the most joyful moments come together to create a trailer that's as vibrant and full of life as the couple themselves.
+            Fast-paced edits, dynamic music, and the most joyful moments come
+            together to create a trailer that's as vibrant and full of life as
+            the couple themselves.
           </p>
           <div className="project-meta">
-            <span><strong>Location:</strong> Pretoria, SA</span>
-            <span><strong>Date:</strong> June 2025</span>
+            <span>
+              <strong>Location:</strong> Pretoria, SA
+            </span>
+            <span>
+              <strong>Date:</strong> June 2025
+            </span>
           </div>
           <Link to="/" className="back-to-projects-link">
             &larr; Back to Main Page

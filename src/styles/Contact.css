@@ -1,10 +1,8 @@
-/*-- General Section Styling --*/
-/*-- General Section Styling with Orange Gradient --*/
 .contact-section {
   padding: 6rem 2rem;
   background: #D89153;
   background: linear-gradient(225deg, #c98a53, #eb6629);
-  color: #1a202c; /* Dark text remains for good contrast */
+  color: #1a202c;
   font-family: 'Inter', sans-serif;
   overflow: hidden;
 }
@@ -18,14 +16,13 @@ body.dark-mode .contact-section {
   margin: 0 auto;
 }
 
-/*-- Header Styling --*/
 .contact-header {
   text-align: center;
   margin-bottom: 4rem;
 }
 
 .contact-title {
-  font-size: 2.75rem; /* Slightly adjusted for balance */
+  font-size: 2.75rem;
   font-weight: 800;
   margin-bottom: 1rem;
   color: #1a202c;
@@ -33,62 +30,55 @@ body.dark-mode .contact-section {
 
 .contact-subtitle {
   font-size: 1.1rem;
-  color: #000000; /* A softer grey for the subtitle */
+  color: #000000;
   max-width: 550px;
   margin: 0 auto;
 }
 
 body.dark-mode .contact-subtitle {
-  color: #f3f4f6; /* Lighter subtitle for dark mode */
+  color: #f3f4f6;
 }
 
-/*-- Content and Layout --*/
-/*-- Modern Glassmorphic Content Box --*/
 .contact-content {
   display: flex;
   gap: 4rem;
-  
-  /* Glassmorphism styles */
-  background: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px); /* For Safari support */
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border to define the edge */
-  
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   padding: 4rem;
-  /* A softer shadow that complements the effect */
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15); 
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
 }
 
 body.dark-mode .contact-content {
-  background: rgba(255, 255, 255, 0.1); /* Darker semi-transparent white */
-  border: 2px solid #c24e00; /* Subtle border for dark mode */
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #c24e00;
 }
 
-/*-- Contact Information Styling --*/
 .contact-info {
   flex: 1;
 }
 
 .info-title {
-  font-size: 1.5rem; /* Adjusted for hierarchy */
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
 
 body.dark-mode .info-title {
-  color: #ffffff; /* Lighter title for dark mode */
+  color: #ffffff;
 }
 
 .info-text {
   font-size: 1rem;
-  line-height: 1.7; /* Increased line-height for readability */
+  line-height: 1.7;
   color: #4a5568;
   margin-bottom: 2.5rem;
 }
 
 body.dark-mode .info-text {
-  color: #ffffff; /* Lighter text for dark mode */
+  color: #ffffff;
 }
 
 .info-list {
@@ -104,16 +94,15 @@ body.dark-mode .info-text {
 }
 
 body.dark-mode .info-list li {
-  color: #ffffff; /* Lighter text for dark mode */
+  color: #ffffff;
 }
 
 .info-icon {
   font-size: 1.25rem;
   color: #3B82F6;
-  margin-right: 1.5rem; /* More space for the icon */
+  margin-right: 1.5rem;
 }
 
-/*-- Form Styling --*/
 .contact-form-wrapper {
   flex: 1.5;
 }
@@ -125,20 +114,20 @@ body.dark-mode .info-list li {
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 1.25rem; /* Increased padding for a better feel */
+  padding: 1.25rem;
   font-size: 1rem;
-  border: 1px solid #e2e8f0; /* A lighter border color */
+  border: 1px solid #e2e8f0;
   border-radius: 8px;
-  background-color: #f7fafc; /* A very light grey background */
+  background-color: #f7fafc;
   transition: all 0.3s ease-in-out;
   box-sizing: border-box;
 }
 
 body.dark-mode .contact-form input,
 body.dark-mode .contact-form textarea {
-  background-color: #17191d; /* Darker background for dark mode */
-  border: 2px solid #c24e00; /* Darker border for dark mode */
-  color: #cbd5e0; /* Lighter text color for dark mode */
+  background-color: #17191d;
+  border: 2px solid #c24e00;
+  color: #cbd5e0;
 }
 
 .contact-form input:focus,
@@ -154,18 +143,13 @@ body.dark-mode .contact-form textarea {
   color: #a0aec0;
 }
 
-/*-- Modern Submit Button --*/
-/*-- Elegant & Grounded Button --*/
 button.submit-button {
   width: 100%;
   padding: 1.25rem;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #ffffff; /* White text for high contrast */
-  
-  /* A deep, dark slate for a professional look */
-  background: #2D3748; 
-
+  color: #ffffff;
+  background: #2D3748;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -174,25 +158,22 @@ button.submit-button {
 }
 
 button.submit-button:hover {
-  /* On hover, it lightens slightly and the shadow gets a hint of the background color */
-  background: #4A5568; 
+  background: #4A5568;
   transform: translateY(-3px);
-  box-shadow: 0 10px 15px -3px rgba(252, 74, 26, 0.2); /* Shadow with an orange glow */
+  box-shadow: 0 10px 15px -3px rgba(252, 74, 26, 0.2);
 }
 
 button.submit-button:active {
   transform: translateY(-1px);
 }
 
-
-/*-- Responsive Adjustments --*/
 @media (max-width: 900px) {
   .contact-section {
     padding: 4rem 1rem;
   }
 
   .contact-content {
-    flex-direction: column; /* Stack info and form */
+    flex-direction: column;
     padding: 2.5rem;
     gap: 3rem;
   }

@@ -1,4 +1,3 @@
-/* This file is identical to Services1Page.css to maintain a consistent look */
 .service-page-container {
   width: 100vw;
   min-height: 100vh;
@@ -39,7 +38,7 @@ body.dark-mode .service-page-container {
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -116,37 +115,30 @@ body.dark-mode .service-page-container {
   color: #2563eb;
 }
 
-/* Dark Mode Styles */
 body.dark-mode .service-page-title,
 body.dark-mode .features-title,
 body.dark-mode .service-features li strong,
 body.dark-mode .back-to-main-link {
   color: #fff;
 }
+
 body.dark-mode .service-page-intro,
 body.dark-mode .service-features li {
   color: #a0aec0;
 }
+
 body.dark-mode .service-features li {
   border-bottom-color: #2d3748;
 }
 
-/* Responsive Styles */
 @media (max-width: 960px) {
   .service-page-content {
     flex-direction: column-reverse;
   }
 }
+
 @media (max-width: 768px) {
   .service-page-title {
     font-size: 2.2rem;
-  }
-  .service-image-column {
-    flex-direction: row;
-    overflow-x: auto;
-    padding-bottom: 1rem;
-  }
-  .service-page-image {
-    min-width: 80%;
   }
 }

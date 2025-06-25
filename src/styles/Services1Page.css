@@ -22,28 +22,28 @@ body.dark-mode .service-page-container {
 }
 
 .service-details-column {
-  flex: 1.2; /* Text column takes a bit more space */
+  flex: 1.2;
 }
 
 .service-image-column {
   flex: 0.8;
   display: flex;
-  flex-direction: column; /* Stack images vertically */
-  gap: 1.5rem; /* Add space between images */
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .service-page-image {
   width: 90%;
   height: auto;
-  aspect-ratio: 16 / 9; /* Maintain a consistent aspect ratio */
-  object-fit: cover; /* Ensure image covers the area without distortion */
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
 .service-page-image:hover {
-  transform: scale(1.03); /* Add a subtle zoom effect on hover */
+  transform: scale(1.03);
 }
 
 .service-page-title {
@@ -102,7 +102,6 @@ body.dark-mode .service-page-container {
   transform: translateY(-2px);
 }
 
-/* New styles for the back link */
 .back-to-main-link {
   display: inline-block;
   margin-top: 1.5rem;
@@ -116,28 +115,28 @@ body.dark-mode .service-page-container {
   color: #2563eb;
 }
 
-
-/* Dark Mode Styles */
 body.dark-mode .service-page-title,
 body.dark-mode .features-title,
 body.dark-mode .service-features li strong,
-body.dark-mode .back-to-main-link { /* Added back link to dark mode styles */
+body.dark-mode .back-to-main-link {
   color: #fff;
 }
+
 body.dark-mode .service-page-intro,
 body.dark-mode .service-features li {
   color: #a0aec0;
 }
+
 body.dark-mode .service-features li {
   border-bottom-color: #2d3748;
 }
 
-/* Responsive Styles */
 @media (max-width: 960px) {
   .service-page-content {
-    flex-direction: column-reverse; /* Image will be on top on mobile */
+    flex-direction: column-reverse;
   }
 }
+
 @media (max-width: 768px) {
   .service-page-title {
     font-size: 2.2rem;

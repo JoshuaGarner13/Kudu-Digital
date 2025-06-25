@@ -1,7 +1,7 @@
-import React from 'react';
-import '../styles/Footer.css';
-import logoImage from '../assets/horns.png'; // Using the same logo as the navbar
-import { FaYoutube, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import React from "react";
+import "../styles/Footer.css";
+import logoImage from "../assets/horns.png";
+import { FaYoutube, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,13 +15,28 @@ const Footer = () => {
             <span className="footer-brand-name">Kudu Digital</span>
           </div>
           <div className="footer-social-media">
-            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Youtube">
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Youtube"
+            >
               <FaYoutube />
             </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
               <FaLinkedin />
             </a>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
               <FaInstagram />
             </a>
           </div>

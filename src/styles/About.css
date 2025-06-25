@@ -1,17 +1,16 @@
-/* --- Base Styles --- */
 .about-section {
   position: relative;
   width: 100vw;
-  min-height: 100vh; /* Use min-height to allow content to expand */
-  height: auto; /* Allow height to adjust to content */
+  min-height: 100vh;
+  height: auto;
   background-color: #D3D3D3;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertically center content */
+  justify-content: center;
   align-items: center;
-  padding: 5rem 2rem; /* Add padding for spacing */
+  padding: 5rem 2rem;
   box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.1);
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden;
 }
 
 body.dark-mode .about-section {
@@ -21,7 +20,7 @@ body.dark-mode .about-section {
 .about-header {
   width: 100%;
   text-align: center;
-  margin-bottom: 4rem; /* Spacing between title and content */
+  margin-bottom: 4rem;
 }
 
 .about-content {
@@ -32,15 +31,15 @@ body.dark-mode .about-section {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 3rem; /* A more reasonable gap */
+  gap: 3rem;
 }
 
 .about-card {
-  flex-shrink: 0; /* Prevent the card from shrinking */
+  flex-shrink: 0;
 }
 
 .about-text {
-  flex: 1; /* Allow the text to take up remaining space */
+  flex: 1;
   max-width: 600px;
   text-align: left;
 }
@@ -56,7 +55,7 @@ body.dark-mode .about-header h1 {
 }
 
 .about-text p {
-  font-size: 1.2em; /* Slightly smaller for better balance */
+  font-size: 1.2em;
   color: #333;
   line-height: 1.7;
   margin: 0;
@@ -66,26 +65,25 @@ body.dark-mode .about-text p {
   color: #FFFFFF;
 }
 
-/* --- Responsive Adjustments --- */
 @media (max-width: 960px) {
   .about-content {
-    flex-direction: column; /* Stack the card and text */
+    flex-direction: column;
     gap: 3rem;
   }
 
   .about-text {
-    text-align: center; /* Center text on mobile */
+    text-align: center;
     max-width: 90%;
   }
 
   .about-text p {
-    font-size: 1.1rem; /* Adjust font for mobile readability */
+    font-size: 1.1rem;
   }
 }
 
 @media (max-width: 480px) {
   .about-section {
-    padding: 4rem 1rem; /* Less padding on small screens */
+    padding: 4rem 1rem;
   }
 
   .about-header h1 {
