@@ -126,25 +126,41 @@ body.dark-mode .marquee span {
 /* For tablets and larger phones */
 @media (max-width: 768px) {
   .menu__item-link {
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Adjusted for better readability on tablets */
+    padding: 0 1.5rem;
+  }
+  .marquee span {
+    font-size: 1.5rem;
+  }
+  .marquee__img {
+    width: 140px;
+    height: 6vh;
+  }
+}
+
+/* For standard phones */
+@media (max-width: 480px) {
+  .menu__item-link {
+    font-size: 1.2rem; /* Further reduce font size */
   }
   .marquee span {
     font-size: 1.2rem;
   }
   .marquee__img {
-    width: 120px;
+    width: 100px; /* Make the marquee image smaller */
+    height: 5vh;
   }
 }
 
-/* NEW: For smaller phones like iPhone SE */
-@media (max-width: 480px) {
+/* For very small phones */
+@media (max-width: 360px) {
   .menu__item-link {
-    font-size: 1rem; /* Further reduce font size */
+    font-size: 1rem;
   }
   .marquee span {
     font-size: 1rem;
   }
   .marquee__img {
-    width: 100px; /* Make the marquee image smaller too */
+    width: 80px;
   }
 }

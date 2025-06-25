@@ -3,6 +3,8 @@
   padding: 4rem 1rem;
   background-color: #D3D3D3;
   text-align: center;
+  height: auto; /* Allow height to be determined by content */
+  min-height: 100vh;
 }
 
 body.dark-mode .services-section {
@@ -101,5 +103,12 @@ body.dark-mode .service-card {
     gap: 1.5rem; /* Reduce the gap between cards */
     grid-template-columns: 1fr;
     width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-grid {
+    /* On very small screens, ensure it doesn't try to fit 300px */
+    grid-template-columns: 1fr;
   }
 }

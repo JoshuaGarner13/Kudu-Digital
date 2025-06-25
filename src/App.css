@@ -2,6 +2,7 @@
   height: auto;
   overflow-x: hidden;
   background: #fff;
+  width: 100%;
 }
 
 /* REMOVED the .horizontal-transition-container and .services-pin-container

@@ -1,16 +1,17 @@
+/* --- Base Styles --- */
 .about-section {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh; /* Use min-height to allow content to expand */
+  height: auto; /* Allow height to adjust to content */
   background-color: #D3D3D3;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center; /* Vertically center content */
   align-items: center;
-
-  
+  padding: 5rem 2rem; /* Add padding for spacing */
   box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 body.dark-mode .about-section {
@@ -20,31 +21,26 @@ body.dark-mode .about-section {
 .about-header {
   width: 100%;
   text-align: center;
-  margin-top: 150px;
-  padding: 0px 0;
-}
-
-body.dark-mode .about-header h1 {
-  color: #FFFFFF;
+  margin-bottom: 4rem; /* Spacing between title and content */
 }
 
 .about-content {
   max-width: 1200px;
-  padding: 0 20px 20px;
+  width: 100%;
+  padding: 0 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 240px;
-  flex: 1;
+  gap: 3rem; /* A more reasonable gap */
 }
 
 .about-card {
-  flex: 0 0 auto;
+  flex-shrink: 0; /* Prevent the card from shrinking */
 }
 
 .about-text {
-  flex: 6;
+  flex: 1; /* Allow the text to take up remaining space */
   max-width: 600px;
   text-align: left;
 }
@@ -55,10 +51,14 @@ body.dark-mode .about-header h1 {
   margin: 0;
 }
 
+body.dark-mode .about-header h1 {
+  color: #FFFFFF;
+}
+
 .about-text p {
-  font-size: 1.5em;
+  font-size: 1.2em; /* Slightly smaller for better balance */
   color: #333;
-  line-height: 1.8;
+  line-height: 1.7;
   margin: 0;
 }
 
@@ -66,35 +66,34 @@ body.dark-mode .about-text p {
   color: #FFFFFF;
 }
 
-/* About.css */
-
-/* Add this media query at the end of the file */
-@media (max-width: 960px) { /* Using a slightly larger breakpoint */
-  .about-section {
-    height: auto; /* Allow height to grow with content */
-    padding: 6rem 2rem;
-    width: 100%; /* Ensure full width on mobile */
-  }
-
-  .about-header {
-    margin-top: 0; /* Adjust header margin for a normal flow */
-    margin-bottom: 3rem;
-  }
-
+/* --- Responsive Adjustments --- */
+@media (max-width: 960px) {
   .about-content {
-    flex-direction: column; /* Stack the card and text vertically */
-    gap: 3rem; /* Reduce the gap */
-    padding: 0 1rem;
+    flex-direction: column; /* Stack the card and text */
+    gap: 3rem;
   }
 
   .about-text {
-    text-align: center; /* Center the text for a better mobile look */
-    max-width: 80%;
-    margin: 0 auto; /* Center the text block */
+    text-align: center; /* Center text on mobile */
+    max-width: 90%;
   }
 
   .about-text p {
-    font-size: 1.0rem; /* Adjust font size for mobile readability */
-    line-height: 1.7;
+    font-size: 1.1rem; /* Adjust font for mobile readability */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 4rem 1rem; /* Less padding on small screens */
+  }
+
+  .about-header h1 {
+    font-size: 2.2em;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+    text-align: left;
   }
 }

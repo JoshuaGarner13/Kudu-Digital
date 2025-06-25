@@ -86,13 +86,15 @@ body.dark-mode .footer-social-media a {
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .footer-top, .footer-bottom {
-    flex-direction: column;
+    flex-direction: column; /* Stack all items vertically */
     text-align: center;
-    height: auto;
-    width: 100%;
   }
 
   .footer-bottom p {
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.75rem; /* Add space between stacked paragraphs */
+  }
+  
+  .footer-bottom p:last-child {
+    margin-bottom: 0;
   }
 }

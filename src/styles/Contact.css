@@ -33,9 +33,13 @@ body.dark-mode .contact-section {
 
 .contact-subtitle {
   font-size: 1.1rem;
-  color: #4a5568; /* A softer grey for the subtitle */
+  color: #000000; /* A softer grey for the subtitle */
   max-width: 550px;
   margin: 0 auto;
+}
+
+body.dark-mode .contact-subtitle {
+  color: #f3f4f6; /* Lighter subtitle for dark mode */
 }
 
 /*-- Content and Layout --*/
@@ -183,18 +187,27 @@ button.submit-button:active {
 
 /*-- Responsive Adjustments --*/
 @media (max-width: 900px) {
+  .contact-section {
+    padding: 4rem 1rem;
+  }
+
   .contact-content {
-    flex-direction: column;
-    padding: 2.0rem;
+    flex-direction: column; /* Stack info and form */
+    padding: 2.5rem;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-content {
+    padding: 1.5rem;
   }
 
-  .info-list li {
-    display: none;
+  .contact-title {
+    font-size: 2rem;
   }
 
-  .contact-container {
-   padding: 0;
-    width: 100%;      /* Make it nearly full viewport width */
-    max-width: 100vw; 
+  .contact-subtitle {
+    font-size: 1rem;
   }
 }
