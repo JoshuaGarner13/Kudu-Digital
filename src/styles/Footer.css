@@ -99,3 +99,13 @@ body.dark-mode .footer-social-media a {
     margin-bottom: 0;
   }
 }
+
+.footer-bottom .portfolio-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom .portfolio-link:hover {
+  text-decoration: underline;
+}

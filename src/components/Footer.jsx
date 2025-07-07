@@ -43,7 +43,15 @@ const Footer = () => {
         </div>
         <div className="footer-bottom">
           <p>&copy; {currentYear} Kudu Digital. All Rights Reserved.</p>
-          <p>Created by Joshua Garner</p>
+          <p>Created by{" "}
+            <a
+              href="https://joshuagarner.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="portfolio-link"
+            >
+              Joshua Garner
+            </a></p>
           <p>Pretoria, Gauteng, South Africa</p>
         </div>
       </div>

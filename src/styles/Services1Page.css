@@ -142,3 +142,227 @@ body.dark-mode .service-features li {
     font-size: 2.2rem;
   }
 }
+
+/* Paste these new styles at the end of your Services1Page.css file */
+
+.service-features li .footnote {
+  display: block;
+  font-size: 0.85rem;
+  color: #5a687c;
+  margin-top: 0.5rem;
+}
+
+.examples-section {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.examples-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.example-item {
+  width: 100%;
+}
+
+.example-item-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+.service-video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: #000;
+}
+
+.service-video-container:hover {
+  transform: scale(1.02);
+}
+
+.service-page-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* --- Dark Mode Styles --- */
+body.dark-mode .service-features li .footnote {
+  color: #a0aec0;
+}
+
+body.dark-mode .example-item-title {
+  color: #fff;
+}
+
+/* Paste these new styles at the end of your Services1Page.css file */
+
+/* --- Pricing Section Styles --- */
+.pricing-section {
+  width: 100%;
+  margin: 3rem 0;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+  align-items: start;
+}
+
+.pricing-card {
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
+}
+
+.pricing-card.featured {
+  border: 2px solid #c24e00;
+  transform: scale(1.03);
+}
+
+.featured-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #c24e00;
+  color: #fff;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.pricing-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 1rem;
+}
+
+.pricing-card .price {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #c24e00;
+  margin-bottom: 1.5rem;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  flex-grow: 1; /* Pushes exclusions to the bottom */
+}
+
+.pricing-card ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e2e8f0;
+  color: #4a5568;
+}
+
+.pricing-card ul li:first-child {
+  border-top: 1px solid #e2e8f0;
+}
+
+.pricing-card .exclusions {
+  font-size: 0.8rem;
+  color: #718096;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+/* Styles for smaller editing cards */
+.pricing-grid-small {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  align-items: stretch; /* Ensures all grid items are the same height */
+}
+
+.pricing-card-small {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  /* Added Flexbox for better content alignment */
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card-small h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #1a202c; /* Ensure consistent color */
+}
+
+.pricing-card-small p {
+  font-size: 0.9rem;
+  color: #4a5568;
+  flex-grow: 1; /* This makes the description take up available space, pushing the price down */
+  margin-bottom: 1rem;
+}
+
+.pricing-card-small .price-small {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #c24e00;
+  text-align: left; /* FIX: Changed from 'right' to 'left' */
+  margin-top: auto; /* Pushes the price to the bottom if content is short */
+}
+
+/* --- Dark Mode Styles for Pricing --- */
+body.dark-mode .pricing-card,
+body.dark-mode .pricing-card-small {
+  background-color: #1e212a;
+  border-color: #2d3748;
+}
+
+body.dark-mode .pricing-card h3,
+body.dark-mode .pricing-card-small h4 {
+  color: #fff;
+}
+
+body.dark-mode .pricing-card ul li {
+  border-color: #2d3748;
+  color: #a0aec0;
+}
+
+body.dark-mode .pricing-card .exclusions {
+  color: #718096;
+}
+
+body.dark-mode .pricing-card-small p {
+  color: #a0aec0;
+}
