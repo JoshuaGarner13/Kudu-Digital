@@ -34,6 +34,18 @@ const About = forwardRef((props, ref) => {
             wedding films, where I combine cinematic visuals with a thoughtful
             approach to capturing the day’s most meaningful moments.
           </p>
+
+          <div className="about-video-wrapper">
+            <div className="video-container-responsive">
+              <iframe
+                src="https://www.youtube.com/embed/gRN7nxavaHc"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </section>
