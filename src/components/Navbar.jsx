@@ -189,13 +189,13 @@ const Navbar = () => {
             </a>
           </li>
           <li className="mobile-social-links">
-            <a href="#youtube" aria-label="Youtube">
+            <a href="http://www.youtube.com/@KuduDigital2024" aria-label="Youtube">
               <FaYoutube />
             </a>
-            <a href="#linkedin" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/zander-jordaan-17b0452aa/" aria-label="LinkedIn">
               <FaLinkedin />
             </a>
-            <a href="#facebook" aria-label="Facebook">
+            <a href="https://www.instagram.com/kudu_digital?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Facebook">
               <FaInstagram />
             </a>
           </li>

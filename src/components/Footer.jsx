@@ -16,7 +16,7 @@ const Footer = () => {
           </div>
           <div className="footer-social-media">
             <a
-              href="https://www.youtube.com"
+              href="http://www.youtube.com/@KuduDigital2024"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Youtube"
@@ -24,7 +24,7 @@ const Footer = () => {
               <FaYoutube />
             </a>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/zander-jordaan-17b0452aa/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -32,10 +32,10 @@ const Footer = () => {
               <FaLinkedin />
             </a>
             <a
-              href="https://www.facebook.com"
+              href="https://www.instagram.com/kudu_digital?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Facebook"
+              aria-label="Instagram"
             >
               <FaInstagram />
             </a>
