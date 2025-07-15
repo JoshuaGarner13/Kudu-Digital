@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/Services1Page.css";
 import weddingImage1 from "../assets/WeddingFilms.png";
 import weddingImage2 from "../assets/WeddingTrailers.png";
-import weddingImage3 from "../assets/KurstonClaytonWeddingTrailer.png";
+import weddingImage3 from "../assets/wedding3.png";
 
 const Services1Page = () => {
   return (
@@ -45,7 +45,7 @@ const Services1Page = () => {
                 <h3>SUPER Wedding Package</h3>
                 <div className="price">R13 500</div>
                 <ul>
-                  <li>Wedding Highlight (3-5 mins)</li>
+                  <li>Wedding Highlight (5-7 mins)</li>
                   <li>Wedding Trailer (10-40 secs)</li>
                   <li>Full Day Shoot (12 hours)</li>
                 </ul>
@@ -88,6 +88,14 @@ const Services1Page = () => {
               <div className="example-item">
                 <div className="service-video-container"><iframe className="service-page-video" src="https://www.youtube.com/embed/uBeE2s8D9bQ" title="Wedding Trailer Example 2" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
                 <h3 className="example-item-title">Marilize & Casparus TRAILER</h3>
+              </div>
+              <div className="example-item">
+                <div className="service-video-container"><iframe className="service-page-video" src="https://www.youtube.com/embed/lhgmzZTAedE" title="Wedding Trailer Example 2" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
+                <h3 className="example-item-title">Stefan & Ester Highlights</h3>
+              </div>
+              <div className="example-item">
+                <div className="service-video-container"><iframe className="service-page-video" src="https://www.youtube.com/embed/IwWIvdqh8l8" title="Wedding Trailer Example 2" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
+                <h3 className="example-item-title">Marthinus & Nanette Highlights</h3>
               </div>
             </div>
           </div>
