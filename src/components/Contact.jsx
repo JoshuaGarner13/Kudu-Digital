@@ -41,7 +41,19 @@ const Contact = () => {
             </ul>
           </div>
           <div className="contact-form-wrapper">
-            <form className="contact-form">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              className="contact-form"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <p hidden>
+                <label>
+                  Don’t fill this out: <input name="bot-field" />
+                </label>
+              </p>
               <div className="form-group">
                 <label htmlFor="name" className="sr-only">
                   Your Name
@@ -78,6 +90,7 @@ const Contact = () => {
                   placeholder="Your Message"
                 ></textarea>
               </div>
+
               <button type="submit" className="submit-button">
                 Send Message
               </button>
