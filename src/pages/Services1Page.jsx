@@ -38,7 +38,7 @@ const Services1Page = () => {
                   <li>Wedding Trailer (10-40 secs)</li>
                   <li>Full Day Shoot (8 hours)</li>
                 </ul>
-                <p className="exclusions">Excludes transport and camera hire.</p>
+                <p className="exclusions">Excludes transport.</p>
               </div>
               <div className="pricing-card featured">
                 <div className="featured-badge">Most Popular</div>
@@ -49,7 +49,7 @@ const Services1Page = () => {
                   <li>Wedding Trailer (10-40 secs)</li>
                   <li>Full Day Shoot (12 hours)</li>
                 </ul>
-                <p className="exclusions">Excludes transport and camera hire.</p>
+                <p className="exclusions">Excludes transport.</p>
               </div>
             </div>
 
