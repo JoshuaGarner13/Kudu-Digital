@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Services1Page.css";
 import weddingImage1 from "../assets/WeddingFilms.png";
-import weddingImage2 from "../assets/WeddingTrailers.png";
-import weddingImage3 from "../assets/wedding3.png";
+import weddingImage2 from "../assets/wedding-photo2.jpg";
+import weddingImage3 from "../assets/wedding-photo1.jpg";
 
 const Services1Page = () => {
   return (
@@ -31,8 +31,8 @@ const Services1Page = () => {
             <h2 className="features-title">Videography Packages</h2>
             <div className="pricing-grid">
               <div className="pricing-card">
-                <h3>Full Wedding Package</h3>
-                <div className="price">R10 000</div>
+                <h3>Legacy Package</h3>
+                <div className="price">R9 000</div>
                 <ul>
                   <li>Wedding Highlight (3-5 mins)</li>
                   <li>Wedding Trailer (10-40 secs)</li>
@@ -42,8 +42,8 @@ const Services1Page = () => {
               </div>
               <div className="pricing-card featured">
                 <div className="featured-badge">Most Popular</div>
-                <h3>SUPER Wedding Package</h3>
-                <div className="price">R13 500</div>
+                <h3>Cinematic Story Package</h3>
+                <div className="price">R10 500</div>
                 <ul>
                   <li>Wedding Highlight (5-7 mins)</li>
                   <li>Wedding Trailer (10-40 secs)</li>
