@@ -1,7 +1,7 @@
 import React from "react";
 import SpotlightCard from "./SpotlightCard";
 import "../styles/Services.css";
-import image1 from "../assets/WeddingFilms.png";
+import image1 from "../assets/wedding-photo3.jpg";
 import image2 from "../assets/SocialMediaContent.png";
 import image3 from "../assets/orchestra.png";
 
